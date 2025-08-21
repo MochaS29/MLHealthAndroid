@@ -1,0 +1,86 @@
+# System files
+.DS_Store
+Thumbs.db
+*.log
+.CFUserTextEncoding
+
+# Environment files
+.env
+.env.local
+.env.*.local
+
+# IDE files
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# Python
+venv/
+__pycache__/
+*.py[cod]
+*$py.class
+.Python
+env/
+ENV/
+
+# Bash/Shell
+.bash_history
+.zsh_history
+.zsh_sessions/
+.zshrc
+
+# API Keys and Secrets
+**/config/secrets.json
+**/config/api_keys.json
+
+# Personal/System directories to exclude
+Desktop/
+Documents/
+Downloads/
+Movies/
+Music/
+Pictures/
+Public/
+Library/
+Business Documents/
+.android/
+.config/
+.cups/
+.docker/
+.emulator_console_auth_token
+.expo/
+.gem/
+.gradle/
+.npm-global/
+.npm/
+.npmrc
+.oracle_jre_usage/
+.swiftpm/
+.claude/
+.claude.json
+.claude.json.backup
+
+# Other apps not part of MindQuest
+CommissaryBot/
+HealthTracker/
+HealthTracker bk/
+IPhone Apps/
+LabResultsApp/
+MyFirstApp/
+ProgressChallengeApp/
+commissary-voicebot/
+meal-planner/
+innovation-journal/
+mindlabs-website/
+mochamindlabs-website/
+daily-supplements.html
+index.html
+
+# Keep only MindQuest related projects
+!MindQuestApp/
+!MindLabsQuestAndroid/
+!MindLabsQuestSwiftUI/
+!mindquest-pm-agent/
+!MINDQUEST_README.md
+!GITHUB_SETUP.md
