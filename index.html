@@ -4,6 +4,12 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Mocha's Mind Labs Inc. | Empowering Health Through Mindful Technology</title>
+    
+    <!-- Favicon and App Icons -->
+    <link rel="icon" type="image/png" href="mindquest-icon.png">
+    <link rel="apple-touch-icon" href="mindquest-icon.png">
+    <link rel="shortcut icon" type="image/png" href="mindquest-icon.png">
+    
     <style>
         * {
             margin: 0;
@@ -126,11 +132,20 @@
         }
 
         .logo {
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
             font-size: 1.8rem;
             font-weight: bold;
             color: var(--mocha-brown);
             text-decoration: none;
             transition: transform 0.3s ease;
+        }
+        
+        .logo img {
+            width: 36px;
+            height: 36px;
+            border-radius: 8px;
         }
 
         .logo:hover {
@@ -563,6 +578,14 @@
             font-size: 3rem;
             margin-bottom: 1.5rem;
             display: block;
+        }
+        
+        .feature-icon.app-icon {
+            width: 60px;
+            height: 60px;
+            border-radius: 12px;
+            object-fit: cover;
+            margin: 0 auto 1.5rem;
         }
 
         .feature-card h3 {
@@ -1015,7 +1038,10 @@
     <!-- Navigation -->
     <nav>
         <div class="nav-container">
-            <a href="#" class="logo">Mocha's Mind Labs</a>
+            <a href="#" class="logo">
+                <img src="mindquest-icon.png" alt="Mind Labs Quest Logo">
+                <span>Mocha's Mind Labs</span>
+            </a>
             <div class="nav-actions">
                 <button class="theme-toggle" onclick="toggleTheme()" title="Toggle Dark Mode">
                     <span id="theme-icon">🌙</span>
@@ -1095,7 +1121,7 @@
             </div>
             <div class="features-grid">
                 <div class="feature-card product-card" onclick="toggleDemo(this)">
-                    <span class="feature-icon">🎮</span>
+                    <img src="mindquest-icon.png" alt="Mind Quest" class="feature-icon app-icon">
                     <h3>Mind Quest</h3>
                     <p class="product-subtitle">Teen ADHD Executive Function Tool</p>
                     <p>Gamified scheduling and task management designed specifically for teens with ADHD. Turn daily routines into engaging quests, build executive function skills, and celebrate achievements in a supportive digital environment.</p>
